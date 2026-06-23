@@ -3,24 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>AfricInnovate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Body fade-in animation */
+        body {
+            animation: myAnimation 2s ease-in-out;
+        }
+        @keyframes myAnimation {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        h1 { font-family: 'Roboto', sans-serif; }
+        h2 { font-family: 'Montserrat', sans-serif; }
+        footer a { font-family: 'Poppins', sans-serif; }
+    </style>
 </head>
-<body>
-    <header>
-        <img src="./images/image.png" alt="image"/>
-        <h2>AfricInnovate Tech Industry</h2>
+<body class="box-border p-0 m-0">
+
+    <!-- Header -->
+    <header class="w-full h-[70px] bg-[#173459] flex items-center gap-[30px] text-white">
+        <img
+            src="./images/image.png"
+            alt="image"
+            class="w-[50px] h-[50px] rounded-[10px] ml-[15px]"
+        />
+        <h2 class="sm:self-center md:text-center">AfricInnovate Tech Industry</h2>
     </header>
-    <main>
-    <h1><b>Come and learn comfortably</b></h1>
-    <div id="container"></div>
-    <footer>
-        <a href="https://www.africinnovate.com/about">About</a>
-        <a href="https://www.africinnovate.com/blockchain">Blockchain</a>
-        <a href="https://www.africinnovate.com/training">Training</a>
-        <a href="https://www.africinnovate.com/">Site link</a>
-    </footer>
+
+    <!-- Main -->
+    <main class="flex flex-col justify-center items-center gap-[40px]">
+
+        <h1 class="text-[25px] pl-[10px]"><b>Come and learn comfortably</b></h1>
+
+        <!-- Container — JS populates .column items inside here -->
+        <div
+            id="container"
+            class="flex flex-col gap-[20px]
+                   min-[941px]:flex-row min-[941px]:gap-[10px] min-[941px]:overflow-hidden"
+        ></div>
+
+        <!-- Footer -->
+        <footer
+            class="w-full bg-[#173459] text-center h-[300px]
+                   flex flex-col gap-[40px] justify-center"
+        >
+            <a href="https://www.africinnovate.com/about"
+               class="text-white text-[20px] no-underline">About</a>
+            <a href="https://www.africinnovate.com/blockchain"
+               class="text-white text-[20px] no-underline">Blockchain</a>
+            <a href="https://www.africinnovate.com/training"
+               class="text-white text-[20px] no-underline">Training</a>
+            <a href="https://www.africinnovate.com/"
+               class="text-white text-[20px] no-underline">Site link</a>
+        </footer>
+
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
